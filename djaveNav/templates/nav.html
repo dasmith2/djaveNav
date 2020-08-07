@@ -1,12 +1,7 @@
-<style>
-  .nav { display: flex; align-items: baseline; }
-  .nav div { margin: 10px 20px 0px 0px; }
-  .nav .current { font-size: 30px; }
-</style>
-<div class="nav">
-  {% for item in nav_items_current_or_not %}
+<div class="nav primary_nav">
+  {% for item in primary_nav_items %}
     <div{% if item.is_current %} class="current"{% endif %}>
-      <a href="{{ item.url }}">{{ item.display }}</a>
+      <a href="{{ item.url }}" class="{{ item.css_class }}">{{ item.display }}</a>
     </div>
   {% endfor %}
 </div>

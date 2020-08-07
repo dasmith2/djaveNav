@@ -1,0 +1,7 @@
+{% load zoom %}
+.when { margin-top: {% zoom 60 %}px; }
+.when div.two_before { margin-top: 0px; }
+.when div { margin-top: {% zoom 12 %}px; }
+.when .current { font-size: {% font_size 1.7 %}; }
+.when .one_before a, .when .one_after a { font-size: {% font_size 1.2 %}; }
+.when .two_before a, .when .two_after a { font-size: {% font_size .8 %}; }
